@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>图片</title>
+	</head>
+	<body>
+		<!--
+			src:图片路径、width：宽度、height：高度、
+        	alt：图频路径不对，不显示时的文字提示、title：鼠标悬停时文字提示
+        	16px=1em
+        	图片的路径：
+        	1.绝对路径：全路径，作为测试练习，不建议
+        	file：///C://ProgramFile/image/6.png
+        	https://www.qq.com/image/6.pn
+        	2.相对路径：当前页面为父关系
+        	 a.图片与当前页面在同一目录下(兄弟关系)、src="文件全称"
+        	 b.图片所在文件夹与当前页面在同一目录（父子关系）src="图片文件夹/图片全称"
+        	 c.图片与页面所在文件夹在同一目录(爷父关系)src="../(向上返一级目录)../图片全称"
+        	3.根路径：针对服务器来引图片./
+        -->
+       <div align="center">
+	一般显示方式： <br />
+	<img src="img/6.png" width="" height="" alt="图片不对。显示文字" title="这是一张图片,正确显示" />
+	<br /> 1、文件路径错误： <br />
+	<img src=" img/10.png" width="" height="" alt="图片不对。显示文字" title="这是一张图片" />
+	<br /> 2、兄弟关系目录： <br />
+	<img src="5.png" title="兄弟关系目录" />
+	<br /> 3、爷父关系目录： <br />
+	<img src="../10.png" title="爷父关系目录" />
+	<br /> 4、绝对路径目录： <br />
+	<img src="file:///C:/Users/lenovo/Pictures/img/003 (1).jpg" title="绝对路径目录" />
+</div>
+
+	</body>
+</html>
