@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单</title>
+	</head>
+	<body>
+		form表单：
+<!--
+		form:也是嵌套标签
+		action:与后台交互的接口
+		method:
+		   1)get  所有提交的数据在url上可以看到的
+		     localhost:8080/Demo/login?username=1234&password=123456
+		   2)post
+		      隐式的数据提交。在url上是不体现的。
+			  大多的提交都是post,体现数据安全
+		name：对form表单起名
+	    class:类选择器css定义
+		onsubmit:验证时触发事件定义
+		-->
+		<form action="img.html" method="post" 
+		name="demoForm" onsubmit="">
+			<!--文本框
+			type="text"
+			placeholder：文本框的提示信息
+			value:文本框的值
+			id="" name="":给文本域命名
+			onblur:事件是可以单独定义到某个控件上
+			-->
+			<p>
+			username:<input type="text" id="username" name="username" 
+			value="" placeholder="数字,字母组成" onkeyup=""/></p>
+			<!--密码框
+			type="password"
+			-->
+			<p>password:
+			<input type="password" value="" id="password" name="password"/></p>
+			<!--单选框
+			type="radio"
+			value 需定义了，最终往后台提交的值就在这定义
+			checked:默认选项
+			name:定义为同一个值
+			-->
+			<p>sex:
+			<input type="radio" name="sex" value="男" checked />Man
+			<input type="radio" name="sex" value="女"/>Woman
+			</p>
+			<!--下拉框：
+			selected:设置默认显示某一子项
+			multiple:把单选变成多选
+			size:多选数据时，页面默认显示的数据列表大小，与multiple成对出现
+			-->
+			<p>出生地：
+			<select style="width: 100px;" >
+				<option value="SNX">陕西</option>
+				<option value="SX">山西</option>
+				<option value="SC">四川</option>
+				<option value="HN" selected >河南</option>
+			</select>
+			</p>
+			<!--复选框
+			type="checkbox"
+			hobby:[c,python]
+			checked:默认设置
+			-->
+			<p>
+			爱好：
+				<input type="checkbox" checked="checked" name="hobby" value="C"/>C
+				<input type="checkbox" name="hobby" value="Python"/>Python
+				<input type="checkbox" name="hobby" value="Java"/>Java						
+			</p>
+			
+			<!--文本域
+			textarea ：文本域的标签
+			cols="10" rows="3":来定义文本域的列，行
+			具体数据值是往标签之间写的
+			-->
+			个人介绍:
+			<p>
+				<textarea cols="10" rows="3" name="detail">					
+					
+				</textarea>
+			</p>
+			<!--文件上传：
+			type="file"
+			
+			-->
+			<p>
+				头像上传：
+				<input type="file" name=""/>
+			</p>
+			<!--信息隐藏
+			 type="hidden"
+			-->
+			<p>
+				<input type="hidden" value="12" name="userId"/>
+			</p>
+			<!--时间的标签
+			type="date"
+			-->
+			<p>
+				出生日期：
+				<input type="date" /><br>		
+			</p>
+			<!--
+			提交、重置按钮
+			两种方式：
+			<input type="submit" value="提交"/>
+			<button type="submit">提交</button>
+			<input type="reset" value="重置"/>
+			<button type="reset">重置</button>
+			<button>中的type属性：
+			type="reset" :按钮的意义：重置
+			type="submit"：提交
+			type="button"：普通按钮
+			-->
+			<p>
+				<input type="submit" value="提交"/>
+				<button type="reset">重置</button>
+			</p>
+	</body>
+</html>

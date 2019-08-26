@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--  
+		  页头中小图标：文件后缀：aaa.ico aaa.png		  
+		  -->
+		<meta charset="utf-8">
+               <!—meta标签可定义当前页面，字符编码，作者，版本，关键词列表等—>
+		<meta auth="luo" />
+		<title>字体相关标签</title>
+	</head>
+	<body>
+		<!--
+		1.双标签：一定写全,以成对的方式去写		
+		<p></p>
+		<div></div>
+		
+		单标签 <br>  <hr> <img>	
+		<input/>
+		2.忽略大小写
+		3.可以嵌套
+		-->
+		<p>
+			<span>1111222333</span>
+		</p>
+		<span>1111222333</span>
+		<span>1111222333</span>
+		<!--1.标题文字
+		<hn> n:1-6  不是说明字体 
+		 align：页面标签的显示位置（居中，左，右）
+		-->
+		<!-- <center></center> -->
+		<h1 align="center">源创力课程</h1>
+		<h2>源创力课程</h2>
+		<h3>源创力课程</h3>
+		<h4>源创力课程</h4>
+		<h5>源创力课程</h5>
+		<h6>源创力课程</h6>
+
+		<!--2.文字标签，作为了解,要知道
+		<font>
+		属性：可以设置字体大小，颜色	
+		2<sup>上标</sup>
+		3<sub>下标</sub>
+		-->
+		<font size="1" color="bisque">课程</font>
+		<i>
+			<font size="20px" color="blue">斜体</font>
+		</i><br />
+		<b>加粗</b><br />
+		<u>加下划线</u> <br />
+		<tt>标准打印机字体</tt><br />
+		<big>大型字体</big><br />
+		<small>小型字体</small><br />
+		2<sup>上标</sup><br />
+		3<sub>下标</sub><br />
+		<strike>加删除线</strike>
+		<!--
+		align:表示当前元素的位置：居中，居左，居右
+		id:段落标签定义id名称
+		class:给当前段落定义类选择器名称
+		style:当前段落样式css定义,样式可多个定义，以分号隔开
+		-->
+		<p align="right" id="pDemo" class="" style="font-size: 14px;color: red;">这是一个测试段落</p>
+		<!--
+		align:表示当前元素的位置：居中，居左，居右
+		size:线的粗细
+		color:线的颜色
+		width:水平线的宽度
+		noshade:去除水平线的阴影效果
+		
+		16px == 1em
+		-->
+		<hr align="right" size="1" color="blue" width="100%" style="height: 20px;">
+		<hr align="right" size="7" color="blue" style="height: 20px;border-width:12px " width="100%" noshade>
+		<div style="height: 300px;">
+			&copy;2019微博
+			<p>
+				&lt;新浪网站&gt;
+				我是&nbsp;
+				中国人
+			</p>
+		</div>
+	</body>
+</html>

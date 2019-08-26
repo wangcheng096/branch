@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表格</title>
+	</head>
+	<body>
+	<!--表格标签：table
+		属于嵌套标签<tr></tr>行
+				<td></td>单元格
+				cellpadding:单元格与单元格之间距离
+				cellspacing:内容与单元格之间距离
+				border：边框粗细/width:表格整体宽度
+				width:表格宽度  bgcolor：背景颜色   bordercolor：边框颜色   align：表格整体位置 (与内容无关)  background：表格背景图片
+				colspan:列合并  rowspan：行合并(在td上)
+				-->
+		<!--<table border="5" cellpadding="10" cellspacing="15" width="500px" bgcolor="blueviolet" 
+			bordercolor="red" align="center" background="img/.jpg">
+			<tr>
+				<th>周一</th>
+				<th>周二</th>
+				<th>周三</th>
+			</tr>
+			<tr style="text-align: center">
+				<td>数学</td>
+				<td>英语</td>
+				<td>语文</td>
+			</tr>
+			<tr style="text-align: center">
+				<td>体育</td>
+				<td>美术</td>
+				<td>音乐</td>
+			</tr>
+		</table>-->
+		<table border="5" cellpadding="10" cellspacing="0" width="500px" bgcolor="blueviolet" 
+			bordercolor="red" align="center">
+			<tr>
+				<th colspan="3">课程表</th>
+			</tr>
+			<tr style="text-align: center">
+				<td>周一</td>
+				<td>周二</td>
+				<td>周三</td>
+			</tr>
+			<tr style="text-align: center">
+				<td>数学</td>
+				<td>英语</td>
+				<td>语文</td>
+			</tr>
+			<tr style="text-align: center">
+				<td>体育</td>
+				<td rowspan="2">美术</td>
+				<td>音乐</td>
+				<tr style="text-align: center">
+				<td>物理</td>
+				<td>生物</td>
+			</tr>
+			<tr style="text-align: center">
+				<td rowspan="3">历史</td>
+				<td>地理</td>
+				<td>政治</td>
+			</tr><tr style="text-align: center">
+				<td>体育</td>
+				<td rowspan="2">美术</td>
+				
+				<tr style="text-align: center">
+				<td>物理</td>
+				
+			</tr>
+		</table>
+	</body>
+</html>
